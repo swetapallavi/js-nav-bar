@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <img src="logo.jpg" alt="">
+        <div class="menu-right">
+            <span onclick="myFunction()">&#9776</span>
+            <ul id="menu">
+                <li>HOME</li>
+                <li>SERVICES</li>
+                <li>BLOGS</li>
+                <li>ABOUT</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        // let burgerMenu = document.getElementsByTagName("span");
+        // burgerMenu[0].addEventListener("click", toggleMenu);
+        // function toggleMenu() {
+        //     let x = document.getElementById("menu");
+        //     if(x.style.display == "block") {
+        //         x.style.display = "none";
+        //     }
+        //     else {
+        //         x.style.display = "block";
+        //     }
+        // }
+        function myFunction() {
+            let x = document.getElementById("menu");
+            if(x.style.display == "block") {
+                x.style.display = "none";
+            }
+            else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
